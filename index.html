@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Rudy Claire — главная</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<script src="./react.js"></script>
+<script src="./react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;family=Unbounded:wght@500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111;text-decoration:none}a:hover{color:#5E5E5A}
+.rc-top a{color:#FFFFFF}.rc-top a:hover{color:#CFCFCB}
+.rc-foot a{color:#E8E8E4}.rc-foot a:hover{color:#FFFFFF}
+.rc-tile img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.rc-tile:hover img{transform:scale(1.04)}
+.rc-icon{width:48px;height:48px;border-radius:50%;background:#F4F4F2;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#111111}
+.rc-icon:hover{background:#E9E9E6}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #111111;outline-offset:3px}
+@media (prefers-reduced-motion: reduce){.rc-tile img{transition:none}}
+@media (max-width: 640px){.rc-nav a,.rc-topnav a{display:inline-block;padding:12px 0}.rc-top a[aria-label]{width:40px !important;height:40px !important}.rc-chat-t{display:none}.rc-chat{padding:0 !important;width:56px;justify-content:center}.rc-nav{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;gap:24px !important;scrollbar-width:none}.rc-nav::-webkit-scrollbar{display:none}.rc-hours{display:none !important}.rc-topnav{gap:16px !important;flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap}}
+</style>
+</helmet>
+<div style="font-family: 'Onest', sans-serif; color: #111111; background: #FFFFFF; min-width: 0">
+
+<!-- Верхняя чёрная полоса -->
+<div class="rc-top" style="background: #111111; color: #FFFFFF; font-size: 14px">
+<div style="max-width: 1360px; margin: 0 auto; padding: 10px 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<nav class="rc-topnav" style="display: flex; flex-wrap: wrap; gap: 32px">
+<a href="#delivery">Доставка и оплата</a>
+<a href="#delivery">Обмен и возврат</a>
+<a href="Product.dc.html">Размерная сетка</a>
+<a href="#contacts">Контакты</a>
+</nav>
+<div style="display: flex; gap: 10px">
+<a href="#contacts" aria-label="Telegram" style="width: 28px; height: 28px; border-radius: 50%; background: #2B2B2B; display: flex; align-items: center; justify-content: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"></path><path d="m9 13 8-6"></path></svg></a>
+<a href="#contacts" aria-label="WhatsApp" style="width: 28px; height: 28px; border-radius: 50%; background: #2B2B2B; display: flex; align-items: center; justify-content: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"></path></svg></a>
+<a href="#contacts" aria-label="Instagram" style="width: 28px; height: 28px; border-radius: 50%; background: #2B2B2B; display: flex; align-items: center; justify-content: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="5"></rect><circle cx="12" cy="12" r="3.5"></circle></svg></a>
+</div>
+</div>
+</div>
+
+<!-- Шапка -->
+<header style="max-width: 1360px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px)">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px 40px; padding: 28px 0">
+<a href="Main.dc.html" style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 0.02em; line-height: 1">RUDY CLAIRE</span>
+<span style="font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #5E5E5A">костюмы из футера · Москва</span>
+</a>
+<label style="flex: 1 1 280px; max-width: 420px; display: flex; align-items: center; gap: 10px; background: #F4F4F2; border-radius: 999px; padding: 0 20px; height: 48px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E5E5A" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+<input type="search" placeholder="Поиск по каталогу" style="border: 0; background: transparent; font: inherit; font-size: 15px; width: 100%; outline: none">
+</label>
+<div style="margin-left: auto; display: flex; align-items: center; gap: 28px; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 14px">
+<span class="rc-hours" style="font-size: 12px; line-height: 1.35; color: #5E5E5A">Ежедневно<br>[ЧАСЫ РАБОТЫ]</span>
+<a href="tel:" style="font-size: 20px; font-weight: 600">[ТЕЛЕФОН]</a>
+</div>
+<div style="display: flex; gap: 10px">
+<a class="rc-icon" href="#" aria-label="Личный кабинет"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg></a>
+<a class="rc-icon" href="#" aria-label="Избранное"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></a>
+<a class="rc-icon" href="Cart.dc.html" aria-label="Корзина, 1 товар" style="position: relative"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span style="position: absolute; top: 4px; right: 4px; width: 16px; height: 16px; border-radius: 50%; background: #111111; color: #FFFFFF; font-size: 10px; font-weight: 600; display: flex; align-items: center; justify-content: center">1</span></a>
+</div>
+</div>
+</div>
+<nav class="rc-nav" style="display: flex; flex-wrap: wrap; gap: 8px 40px; border-top: 1px solid #E6E6E3; padding: 20px 0; font-size: 17px">
+<a href="Catalog.dc.html" style="display: flex; align-items: center; gap: 6px">Костюмы <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"></path></svg></a>
+<a href="Product.dc.html">Classic Red</a>
+<a href="Product.dc.html">Soft Lemon</a>
+<a href="Product.dc.html">Ultraviolet</a>
+<a href="Product.dc.html">Electric Blue</a>
+<a href="#fabric">О ткани</a>
+<a href="#lookbook">Lookbook</a>
+</nav>
+</header>
+
+<!-- Первый экран: слайд перекрашивается в цвет костюма -->
+<section aria-label="Коллекция" aria-roledescription="карусель" onMouseEnter="{{pause}}" onMouseLeave="{{resume}}">
+<div style="background: {{slide.bg}}; color: {{slide.fg}}; overflow: hidden; display: flex; flex-wrap: wrap; min-height: 540px">
+<div style="flex: 1 1 min(520px, 100%); min-width: 0; padding: clamp(32px, 6vw, 56px) clamp(20px, 5vw, 64px) clamp(28px, 5vw, 48px) max(clamp(20px, 5vw, 40px), calc((100vw - 1280px) / 2)); display: flex; flex-direction: column; justify-content: space-between; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.8">Костюм из футера · цвет {{slide.num}} из 4</span>
+<h1 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: clamp(40px, 10vw, 72px); line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: pre-line">{{slide.title}}</h1>
+<p style="margin: 0; font-size: 22px; line-height: 1.4; max-width: 440px">{{slide.tag}}</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px">
+<a href="Product.dc.html" style="background: {{slide.fg}}; color: {{slide.bg}}; border-radius: 14px; padding: 20px 32px; font-size: 17px; font-weight: 600; display: inline-flex; align-items: center; gap: 12px">Выбрать размер · 12 900 ₽ <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"></path></svg></a>
+<div style="display: flex; gap: 12px" role="group" aria-label="Выбор цвета">
+<sc-for list="{{slides}}" as="s" hint-placeholder-count="4">
+<button type="button" aria-label="{{s.name}}" onClick="{{s.pick}}" style="width: 36px; height: 36px; border-radius: 50%; background: {{s.bg}}; border: 2px solid {{s.ring}}; box-shadow: 0 0 0 3px {{s.halo}}; cursor: pointer; padding: 0"></button>
+</sc-for>
+</div>
+</div>
+</div>
+<div style="flex: 1 1 min(520px, 100%); position: relative; min-height: clamp(420px, 60vw, 540px)">
+<div style="position: absolute; left: 0; right: 0; top: 0; height: 3px; background: rgba(255,255,255,0.35); z-index: 1"><div style="height: 100%; width: {{progress}}; background: #FFFFFF; transition: width .4s ease"></div></div>
+<img src="{{slide.img}}" alt="{{slide.name}} — костюм Rudy Claire" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 8%">
+<div style="position: absolute; right: 24px; bottom: 24px; display: flex; gap: 10px">
+<button type="button" aria-label="Предыдущий цвет" onClick="{{prev}}" style="width: 52px; height: 52px; border-radius: 50%; border: 0; background: #FFFFFF; color: #111111; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 6-6 6 6 6"></path></svg></button>
+<button type="button" aria-label="Следующий цвет" onClick="{{next}}" style="width: 52px; height: 52px; border-radius: 50%; border: 0; background: #FFFFFF; color: #111111; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"></path></svg></button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Преимущества -->
+<section style="max-width: 1360px; margin: 0 auto; padding: 32px 40px 0">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<div style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 18px 20px; display: flex; align-items: center; gap: 14px">
+<span style="width: 44px; height: 44px; flex: none; border-radius: 50%; background: #F4F4F2; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8"><path d="M12 3 4 7v6c0 4 3.5 7 8 8 4.5-1 8-4 8-8V7z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+<span style="font-size: 15px; line-height: 1.3">Тираж ограничен,<br>повтора не будет</span>
+</div>
+<div style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 18px 20px; display: flex; align-items: center; gap: 14px">
+<span style="width: 44px; height: 44px; flex: none; border-radius: 50%; background: #F4F4F2; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"></path></svg></span>
+<span style="font-size: 15px; line-height: 1.3">Футер 290 г/м²,<br>79,7% хлопка</span>
+</div>
+<div style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 18px 20px; display: flex; align-items: center; gap: 14px">
+<span style="width: 44px; height: 44px; flex: none; border-radius: 50%; background: #F4F4F2; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"></path><circle cx="12" cy="10" r="2.2"></circle></svg></span>
+<span style="font-size: 15px; line-height: 1.3">Пошив<br>в Москве</span>
+</div>
+<div style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 18px 20px; display: flex; align-items: center; gap: 14px">
+<span style="width: 44px; height: 44px; flex: none; border-radius: 50%; background: #F4F4F2; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"></path><circle cx="7" cy="17.5" r="1.8"></circle><circle cx="17" cy="17.5" r="1.8"></circle></svg></span>
+<span style="font-size: 15px; line-height: 1.3">Доставка по России<br>от 2 дней</span>
+</div>
+<div style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 18px 20px; display: flex; align-items: center; gap: 14px">
+<span style="width: 44px; height: 44px; flex: none; border-radius: 50%; background: #F4F4F2; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8"><path d="M4 12a8 8 0 0 1 14-5.3L20 9M20 4v5h-5M20 12a8 8 0 0 1-14 5.3L4 15M4 20v-5h5"></path></svg></span>
+<span style="font-size: 15px; line-height: 1.3">Обмен и возврат<br>7 дней</span>
+</div>
+</div>
+</section>
+
+<!-- Плитки цветов -->
+<section style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 9vw, 96px) clamp(16px, 4vw, 40px) 0">
+<h2 style="margin: 0 0 32px; font-size: 32px; font-weight: 600; text-align: center">Один день — один образ. Какой сегодня?</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<sc-for list="{{slides}}" as="s" hint-placeholder-count="4">
+<a class="rc-tile" href="Product.dc.html" style="position: relative; display: block; border-radius: 22px; overflow: hidden; aspect-ratio: 3 / 4; background: #F4F4F2">
+<img src="{{s.tile}}" alt="{{s.name}}" style="width: 100%; height: 100%; object-fit: cover; display: block">
+<span style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #111111; border-radius: 999px; padding: 10px 16px 10px 10px; display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 600">
+<span style="width: 22px; height: 22px; border-radius: 50%; background: {{s.bg}}; border: 1px solid rgba(0,0,0,.12)"></span>{{s.name}} <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m9 6 6 6-6 6"></path></svg>
+</span>
+</a>
+</sc-for>
+</div>
+</section>
+
+<!-- Карусель товаров -->
+<section style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 9vw, 96px) clamp(16px, 4vw, 40px) 0">
+<div style="display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 28px; flex-wrap: wrap">
+<h2 style="margin: 0; font-size: 32px; font-weight: 600">Вся коллекция</h2>
+<a href="Catalog.dc.html" style="font-size: 16px; font-weight: 500; border-bottom: 1px solid #111111; padding-bottom: 2px">Весь каталог</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<sc-for list="{{slides}}" as="s" hint-placeholder-count="4">
+<a href="Product.dc.html" style="display: flex; flex-direction: column; gap: 12px">
+<div style="position: relative; border-radius: 18px; overflow: hidden; background: #F4F4F2; aspect-ratio: 4 / 5">
+<img src="{{s.card}}" alt="Костюм {{s.name}}" style="width: 100%; height: 100%; object-fit: cover; display: block">
+<span style="position: absolute; top: 12px; left: 12px; background: #FFFFFF; border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em">ЛИМИТ</span>
+<span aria-label="В избранное" style="position: absolute; top: 10px; right: 10px; width: 38px; height: 38px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></span>
+</div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 50%; background: {{s.bg}}; border: 1px solid rgba(0,0,0,.12)"></span><span style="font-size: 13px; color: #5E5E5A">XS · S · M · L</span></div>
+<span style="font-size: 17px; font-weight: 500">Костюм {{s.name}}</span>
+<span style="font-size: 14px; color: #5E5E5A; margin-top: -6px">Худи + широкие брюки</span>
+<span style="font-size: 20px; font-weight: 700">12 900 ₽</span>
+</a>
+</sc-for>
+</div>
+</section>
+
+<!-- О ткани -->
+<section id="fabric" style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 9vw, 96px) clamp(16px, 4vw, 40px) 0">
+<div style="background: #F4F4F2; border-radius: 28px; overflow: hidden; display: flex; flex-wrap: wrap">
+<div style="flex: 1 1 min(480px, 100%); min-width: 0; padding: clamp(24px, 6vw, 64px); display: flex; flex-direction: column; gap: 24px; justify-content: center">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: clamp(26px, 6vw, 40px); line-height: 1.1; text-transform: uppercase; overflow-wrap: anywhere">Ткань, с которой не хочется расставаться</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3A3A37; max-width: 520px">Двусторонний футер 290 г/м² с бархатистой изнанкой. При стирке по инструкции не скатывается и держит форму, колени не вытягиваются. Изнутри мягкий, как плед, поэтому худи можно носить на голое тело.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 520px">
+<div style="background: #FFFFFF; border-radius: 16px; padding: 16px"><div style="font-size: 26px; font-weight: 700">79,7%</div><div style="font-size: 13px; color: #5E5E5A">хлопок</div></div>
+<div style="background: #FFFFFF; border-radius: 16px; padding: 16px"><div style="font-size: 26px; font-weight: 700">290 г/м²</div><div style="font-size: 13px; color: #5E5E5A">плотность</div></div>
+<div style="background: #FFFFFF; border-radius: 16px; padding: 16px"><div style="font-size: 26px; font-weight: 700">30°C</div><div style="font-size: 13px; color: #5E5E5A">деликатная стирка</div></div>
+</div>
+</div>
+<div style="flex: 1 1 min(420px, 100%); min-height: clamp(320px, 50vw, 480px); position: relative">
+<img src="./ca95ddce96bed979a9a00f52924604d8.jpg" alt="Худи Classic Red крупным планом" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 12%">
+</div>
+</div>
+</section>
+
+<!-- Lookbook -->
+<section id="lookbook" style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 9vw, 96px) clamp(16px, 4vw, 40px) 0">
+<div style="display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 28px; flex-wrap: wrap">
+<div>
+<h2 style="margin: 0 0 8px; font-size: 32px; font-weight: 600">Rudy Claire на улицах города</h2>
+<p style="margin: 0; font-size: 17px; color: #5E5E5A">Так его носят наши модели. Один комплект подходит и к кроссовкам, и к плащу.</p>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px">
+<img src="./f2668cca30308a2bd9ca08575aca456d.jpg" alt="Electric Blue на лестнице" style="width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 18px; display: block">
+<img src="./57641ad3289ca479b30903bc442dbb04.jpg" alt="Soft Lemon у кирпичной стены" style="width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 18px; display: block">
+<img src="./0ff5b8e01cef7ece83a0d0507d49512b.jpg" alt="Ultraviolet в городе" style="width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 18px; display: block">
+<img src="./177d9d2f7e2e6438b20002aba8887549.jpg" alt="Soft Lemon на прогулке" style="width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 18px; display: block">
+<img src="./b6befa79687a845d767678e7a477d1e6.jpg" alt="Electric Blue у окна" style="width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 18px; display: block">
+</div>
+</section>
+
+<!-- Отзывы -->
+<section style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 9vw, 96px) clamp(16px, 4vw, 40px) 0">
+<h2 style="margin: 0 0 28px; font-size: 32px; font-weight: 600; text-align: center">Отзывы</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<figure style="margin: 0; border: 1px solid #E6E6E3; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<blockquote style="margin: 0; font-size: 18px; line-height: 1.5">«Этот костюм стал моим любимым элементом гардероба. Носить его — настоящее удовольствие!»</blockquote>
+<figcaption style="font-size: 14px; color: #5E5E5A">Анна, Москва</figcaption>
+</figure>
+<figure style="margin: 0; border: 1px solid #E6E6E3; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<blockquote style="margin: 0; font-size: 18px; line-height: 1.5">«Качество ткани превзошло все ожидания. После десятка стирок выглядит как новый!»</blockquote>
+<figcaption style="font-size: 14px; color: #5E5E5A">Мария, Санкт-Петербург</figcaption>
+</figure>
+<figure style="margin: 0; border: 1px solid #E6E6E3; border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<blockquote style="margin: 0; font-size: 18px; line-height: 1.5">«Никогда не думала, что один костюм может быть настолько универсальным. Ношу его везде!»</blockquote>
+<figcaption style="font-size: 14px; color: #5E5E5A">Ольга, Екатеринбург</figcaption>
+</figure>
+</div>
+</section>
+
+<!-- Заявка на примерку -->
+<section id="order" style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 9vw, 96px) clamp(16px, 4vw, 40px) 0">
+<div style="background: #F4F4F2; border-radius: 28px; padding: clamp(28px, 5vw, 56px) clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 min(440px, 100%); display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: clamp(24px, 4.5vw, 36px); line-height: 1.15; text-transform: uppercase">Поможем выбрать размер и цвет</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #3A3A37; max-width: 520px">Оставь телефон или Telegram, напишем в ответ. Подскажем по размеру, отправим в Москву или любой город России. Если размер не подойдёт, обменяем.</p>
+</div>
+<form style="flex: 1 1 min(420px, 100%); display: flex; flex-direction: column; gap: 12px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #5E5E5A">Имя<input type="text" autocomplete="given-name" style="height: 56px; border-radius: 14px; border: 1px solid #E6E6E3; background: #FFFFFF; padding: 0 18px; font: inherit; font-size: 16px; color: #111111"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #5E5E5A">Телефон или Telegram<input type="text" placeholder="+7 или @username" style="height: 56px; border-radius: 14px; border: 1px solid #E6E6E3; background: #FFFFFF; padding: 0 18px; font: inherit; font-size: 16px; color: #111111"></label>
+<button type="button" style="height: 58px; border-radius: 14px; border: 0; background: #111111; color: #FFFFFF; font: inherit; font-size: 16px; font-weight: 600; cursor: pointer">Хочу примерить</button>
+<span style="font-size: 12px; line-height: 1.5; color: #5E5E5A">Нажимая кнопку, соглашаешься с <a href="Legal.dc.html#privacy" style="text-decoration: underline">политикой обработки персональных данных</a>.</span>
+</form>
+</div>
+</section>
+
+<!-- Частые вопросы -->
+<section style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 9vw, 96px) clamp(16px, 4vw, 40px) 0">
+<h2 style="margin: 0 0 28px; font-size: 32px; font-weight: 600; text-align: center">Перед заказом обычно спрашивают</h2>
+<div style="max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px">
+<details style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 20px 24px" open><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Как выбрать размер?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3A3A37">Крой свободный. Сверься с размерной сеткой или напиши рост и обхваты в Telegram или WhatsApp, подберём. Если размер не подошёл, обменяем.</p></details>
+<details style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Как доставляете?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3A3A37">По России отправляем СДЭК, Яндекс Доставкой и Почтой России. По Москве есть курьер. Стоимость считается по тарифу службы при оформлении.</p></details>
+<details style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Можно оплатить частями?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3A3A37">Да, через Сплит: четыре платежа по 3 225 ₽. Условия и одобрение определяет сервис Сплит. Ещё можно оплатить картой на сайте или наличными при получении.</p></details>
+<details style="border: 1px solid #E6E6E3; border-radius: 18px; padding: 20px 24px"><summary style="font-size: 18px; font-weight: 600; cursor: pointer">Цвет на фото совпадает с настоящим?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3A3A37">На экране оттенок может немного отличаться из-за настроек дисплея. Ткань прошла активное крашение: при стирке по инструкции (30°C) цвет держится.</p></details>
+</div>
+</section>
+
+<!-- Подписка -->
+<section style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 9vw, 96px) clamp(16px, 4vw, 40px)">
+<div style="background: #111111; color: #FFFFFF; border-radius: 28px; padding: clamp(28px, 5vw, 56px) clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 min(420px, 100%); display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 32px; font-weight: 600">Узнай о новых цветах первой</h2>
+<p style="margin: 0; font-size: 17px; color: #CFCFCB">Пишем, только когда выходит новая коллекция.</p>
+</div>
+<form style="flex: 1 1 min(420px, 100%); display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 10px; flex-wrap: wrap">
+<label style="flex: 1 1 220px"><span style="position: absolute; left: -9999px">Email</span><input type="email" placeholder="Email или Telegram" style="width: 100%; box-sizing: border-box; height: 56px; border-radius: 14px; border: 0; padding: 0 20px; font: inherit; font-size: 16px"></label>
+<button type="button" style="height: 56px; border-radius: 14px; border: 0; background: #FFFFFF; color: #111111; padding: 0 28px; font: inherit; font-size: 16px; font-weight: 600; cursor: pointer">Подписаться</button>
+</div>
+<label style="display: flex; gap: 10px; align-items: start; font-size: 13px; color: #CFCFCB"><input type="checkbox" style="margin: 2px 0 0">Согласна получать письма о новых коллекциях</label>
+</form>
+</div>
+</section>
+
+<!-- Подвал -->
+<footer id="contacts" class="rc-foot" style="background: #111111; color: #E8E8E4">
+<div id="delivery" style="max-width: 1360px; margin: 0 auto; padding: 64px 40px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 22px; color: #FFFFFF">RUDY CLAIRE</span>
+<span style="font-size: 14px; line-height: 1.5; color: #A9A9A4">Лимитированные костюмы из футера. Пошив в Москве.<br>Доставка: СДЭК, Яндекс Доставка, Почта России, курьер по Москве.</span>
+</div>
+<nav style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<a href="Catalog.dc.html">Каталог</a><a href="#fabric">О ткани</a><a href="#lookbook">Lookbook</a><a href="Product.dc.html">Размерная сетка</a>
+</nav>
+<nav style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<a href="#delivery">Доставка и оплата</a><a href="#delivery">Обмен и возврат</a><a href="Legal.dc.html">Договор-оферта</a><a href="Legal.dc.html#privacy">Политика конфиденциальности</a>
+</nav>
+<div style="display: flex; flex-direction: column; gap: 14px; font-size: 15px">
+<span>Оплата картой, наличными или Сплитом</span>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span style="background: #FFFFFF; color: #111111; border-radius: 8px; padding: 6px 10px; font-size: 13px; font-weight: 700">Карта</span>
+<span style="background: #FFFFFF; color: #111111; border-radius: 8px; padding: 6px 10px; font-size: 13px; font-weight: 700">Наличные</span>
+<span style="background: #FFFFFF; color: #111111; border-radius: 8px; padding: 6px 10px; font-size: 13px; font-weight: 700">Сплит</span>
+</div>
+<span style="color: #A9A9A4">Telegram · WhatsApp · Instagram</span>
+</div>
+</div>
+<div style="max-width: 1360px; margin: 0 auto; padding: 24px 40px 40px; border-top: 1px solid #2B2B2B; font-size: 13px; color: #A9A9A4">© 2026 Rudy Claire. [Реквизиты продавца]</div>
+</footer>
+
+<a class="rc-chat" href="#order" aria-label="Написать в Telegram" style="position: fixed; right: 20px; bottom: 20px; z-index: 50; height: 56px; padding: 0 20px 0 16px; border-radius: 999px; background: #111111; color: #FFFFFF; display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; box-shadow: 0 8px 24px rgba(0,0,0,.18); text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"></path><path d="m9 13 8-6"></path></svg><span class="rc-chat-t">Подобрать размер</span></a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4300}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { i: 0, paused: false }; }
+  componentDidMount() {
+    const still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (still) return;
+    this.timer = setInterval(() => {
+      if (!this.state.paused) this.setState({ i: (this.state.i + 1) % 4 });
+    }, 5000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+  renderVals() {
+    const data = [
+      { name: 'Classic Red', title: 'Classic\nRed', tag: 'Смелым всегда видно дальше. Насыщенный красный: с кроссовками на день, с каблуками на вечер.', bg: '#C8191F', fg: '#FFFFFF', img: './9d133bb55f45930d3b7668109ccb12ac.jpg', tile: './9d133bb55f45930d3b7668109ccb12ac.jpg', card: './54ab76b3274a84598c4241e5b703523d.jpg' },
+      { name: 'Soft Lemon', title: 'Soft\nLemon', tag: 'Мягкий лимонный оттенок, подобранный вручную. Лучше всего с белыми кедами.', bg: '#EFE7A6', fg: '#111111', img: './177d9d2f7e2e6438b20002aba8887549.jpg', tile: './297c1896195a090ffaa09a63b3803130.jpg', card: './ddf86585343bb9daf018b70dc73986b0.jpg' },
+      { name: 'Ultraviolet', title: 'Ultra\nviolet', tag: 'Глубокий фиолетовый. Днём с белыми кроссовками, вечером с чёрными ботинками.', bg: '#4B2A8C', fg: '#FFFFFF', img: './fa7982b243f2f875b85ad0ae782e2654.jpg', tile: './0ff5b8e01cef7ece83a0d0507d49512b.jpg', card: './0baf4eda4936ab39ea3cae6e3a242db5.jpg' },
+      { name: 'Electric Blue', title: 'Electric\nBlue', tag: 'Чистый яркий синий электрик. Свободное худи и широкие брюки.', bg: '#1F3FCF', fg: '#FFFFFF', img: './6826c53ae90baeb3c613ce612236bee4.jpg', tile: './1f352c6c43df4f4091d649c2cff55ded.jpg', card: './6beb6ef491a67020bd1fde8ca24da8ea.jpg' }
+    ];
+    const i = this.state.i;
+    const cur = data[i];
+    const slides = data.map((d, k) => ({
+      ...d,
+      ring: k === i ? cur.fg : 'rgba(255,255,255,0.6)',
+      halo: k === i ? (cur.fg === '#FFFFFF' ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.25)') : 'transparent',
+      pick: () => this.setState({ i: k })
+    }));
+    return {
+      slides,
+      slide: { ...cur, num: i + 1 },
+      progress: ((i + 1) * 25) + '%',
+      pause: () => this.setState({ paused: true }),
+      resume: () => this.setState({ paused: false }),
+      prev: () => this.setState({ i: (i + 3) % 4 }),
+      next: () => this.setState({ i: (i + 1) % 4 })
+    };
+  }
+}
+</script>
+</body>
+</html>

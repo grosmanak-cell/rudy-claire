@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Rudy Claire — корзина</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<script src="./react.js"></script>
+<script src="./react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;family=Unbounded:wght@500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#5E5E5A}
+.rc-cta{transition:transform .16s ease-out}.rc-cta:active{transform:scale(.97)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #111111;outline-offset:3px}
+</style>
+</helmet>
+<div style="font-family: 'Onest', sans-serif; color: #111111; min-height: 1100px; position: relative; background: #FFFFFF; display: flex; justify-content: flex-end">
+<div aria-hidden="true" style="position: fixed; inset: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr))">
+<img src="./9d133bb55f45930d3b7668109ccb12ac.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover">
+<img src="./297c1896195a090ffaa09a63b3803130.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover">
+<img src="./fa7982b243f2f875b85ad0ae782e2654.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover">
+<img src="./1f352c6c43df4f4091d649c2cff55ded.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover">
+</div>
+<a href="Product.dc.html" aria-label="Закрыть корзину и вернуться к товару" style="position: fixed; inset: 0; background: rgba(17,17,17,0.6); backdrop-filter: blur(3px)"></a>
+
+<aside aria-label="Корзина" style="position: relative; z-index: 1; min-height: 100vh; box-shadow: -12px 0 40px rgba(0,0,0,.25); width: 100%; max-width: 600px; background: #FFFFFF; padding: 36px 40px 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<h1 style="margin: 0; font-size: 30px; font-weight: 600">Корзина</h1>
+<a href="Product.dc.html" aria-label="Закрыть" style="width: 44px; height: 44px; border-radius: 50%; background: #F4F4F2; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"></path></svg></a>
+</div>
+
+<div style="display: flex; gap: 16px; align-items: center; padding-bottom: 24px; border-bottom: 1px solid #E6E6E3">
+<img src="./54ab76b3274a84598c4241e5b703523d.jpg" alt="Костюм Classic Red" style="width: 96px; height: 120px; object-fit: cover; border-radius: 14px; flex: none">
+<div style="flex: 1; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 17px; font-weight: 500">Костюм Classic Red</span>
+<span style="font-size: 14px; color: #5E5E5A">Размер M</span>
+<div style="display: flex; align-items: center; gap: 4px; margin-top: 6px; background: #F4F4F2; border-radius: 12px; width: max-content">
+<button type="button" aria-label="Меньше" onClick="{{dec}}" style="width: 40px; height: 40px; border: 0; background: transparent; font-size: 20px; cursor: pointer">−</button>
+<span style="min-width: 24px; text-align: center; font-weight: 600">{{qty}}</span>
+<button type="button" aria-label="Больше" onClick="{{inc}}" style="width: 40px; height: 40px; border: 0; background: transparent; font-size: 20px; cursor: pointer">+</button>
+</div>
+</div>
+<span style="font-size: 19px; font-weight: 700; white-space: nowrap">{{sum}} ₽</span>
+</div>
+
+<form style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 17px; font-weight: 600">Получатель</span>
+<span style="font-size: 13px; color: #5E5E5A; margin-top: -6px">Регистрация не нужна</span>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #5E5E5A">Имя и фамилия<input type="text" style="height: 52px; border-radius: 14px; border: 1px solid #E6E6E3; padding: 0 16px; font: inherit; font-size: 16px; color: #111111"></label>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #5E5E5A">Телефон — для службы доставки<input type="tel" placeholder="+7" style="height: 52px; border-radius: 14px; border: 1px solid #E6E6E3; padding: 0 16px; font: inherit; font-size: 16px; color: #111111"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #5E5E5A">Email для чека<input type="email" style="height: 52px; border-radius: 14px; border: 1px solid #E6E6E3; padding: 0 16px; font: inherit; font-size: 16px; color: #111111"></label>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 17px; font-weight: 600">Доставка</span>
+<sc-for list="{{delivery}}" as="d" hint-placeholder-count="4">
+<button type="button" onClick="{{d.pick}}" style="display: flex; align-items: center; gap: 14px; text-align: left; padding: 16px; border-radius: 14px; border: 1px solid {{d.border}}; background: #FFFFFF; font: inherit; cursor: pointer">
+<span style="width: 20px; height: 20px; border-radius: 50%; border: 2px solid #111111; display: flex; align-items: center; justify-content: center; flex: none"><span style="width: 10px; height: 10px; border-radius: 50%; background: {{d.dot}}"></span></span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 500">{{d.title}}</span><span style="font-size: 13px; color: #5E5E5A">{{d.note}}</span></span>
+</button>
+</sc-for>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 17px; font-weight: 600">Оплата</span>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+<sc-for list="{{pay}}" as="o" hint-placeholder-count="3">
+<button type="button" onClick="{{o.pick}}" style="height: 64px; border-radius: 14px; border: 1px solid {{o.border}}; background: {{o.bg}}; color: {{o.fg}}; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px">{{o.title}}<span style="font-size: 12px; font-weight: 400; opacity: 0.75">{{o.note}}</span></button>
+</sc-for>
+</div>
+</div>
+
+<label style="display: flex; gap: 10px; align-items: center; font-size: 15px"><input type="text" placeholder="Промокод" style="flex: 1; height: 48px; border-radius: 12px; border: 1px dashed #BDBDB8; padding: 0 14px; font: inherit; font-size: 15px"></label>
+
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #E6E6E3; padding-top: 20px">
+<div style="display: flex; justify-content: space-between; font-size: 15px; color: #5E5E5A"><span>Товары, {{qty}} шт.</span><span>{{sum}} ₽</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 15px; color: #5E5E5A"><span>Доставка</span><span>{{shipNote}}</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 22px; font-weight: 700; margin-top: 6px"><span>Итого</span><span>{{sum}} ₽</span></div>
+</div>
+
+<a class="rc-cta" href="#" style="height: 62px; border-radius: 16px; background: #111111; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 600; text-decoration: none">{{payCta}}</a>
+<span style="font-size: 12px; line-height: 1.5; color: #5E5E5A">Нажимая кнопку, соглашаешься с <a href="Legal.dc.html">офертой</a> и <a href="Legal.dc.html#privacy">политикой обработки персональных данных</a>.</span>
+</form>
+</aside>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { qty: 1, d: 0, o: 0 }; }
+  renderVals() {
+    const { qty, d, o } = this.state;
+    const D = [
+      { title: 'СДЭК', note: 'Пункт выдачи или курьер, по всей России' },
+      { title: 'Яндекс Доставка', note: 'Курьер или пункт выдачи' },
+      { title: 'Почта России', note: 'В любой населённый пункт' },
+      { title: 'Курьер по Москве', note: 'Доставка до двери' }
+    ];
+    const O = [
+      { title: 'Картой', note: 'онлайн на сайте' },
+      { title: 'Наличными', note: 'при получении' },
+      { title: 'Сплит', note: '4 × ' + (3225 * qty).toLocaleString('ru-RU') + ' ₽' }
+    ];
+    const fmt = (n) => n.toLocaleString('ru-RU');
+    return {
+      qty,
+      sum: fmt(12900 * qty),
+      inc: () => this.setState({ qty: Math.min(qty + 1, 5) }),
+      dec: () => this.setState({ qty: Math.max(qty - 1, 1) }),
+      delivery: D.map((x, k) => ({ ...x, border: k === d ? '#111111' : '#E6E6E3', dot: k === d ? '#111111' : 'transparent', pick: () => this.setState({ d: k }) })),
+      pay: O.map((x, k) => ({ ...x, border: k === o ? '#111111' : '#E6E6E3', bg: k === o ? '#111111' : '#FFFFFF', fg: k === o ? '#FFFFFF' : '#111111', pick: () => this.setState({ o: k }) })),
+      shipNote: 'по тарифу службы',
+      payCta: (o === 0 ? 'Перейти к оплате · ' : o === 1 ? 'Оформить заказ · ' : 'Оплатить Сплитом · ') + fmt(12900 * qty) + ' ₽'
+    };
+  }
+}
+</script>
+</body>
+</html>
