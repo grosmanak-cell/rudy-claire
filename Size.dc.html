@@ -25,7 +25,7 @@ a{color:inherit;text-decoration:none}
 .om-btn{transition:filter .2s}.om-btn:hover{filter:brightness(1.07)}
 .om-flink a:hover{text-decoration:underline}
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #00B5B5;outline-offset:2px}
-@media (max-width: 900px){.om-toplinks{display:none !important}.om-hours{display:none !important}.om-search{order:3;flex:1 1 100% !important;max-width:none !important}.om-menu{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;gap:28px !important;scrollbar-width:none}.om-slide-txt{padding-left:24px !important}.om-hide-m{display:none !important}.om-chat-t{display:none}.om-hrow{padding:20px 0 18px !important}.om-hero-img{object-position:84% center !important}.om-slide-txt{justify-content:flex-start !important;padding-top:28px !important;padding-right:24px !important}.om-k{font-size:15px !important}.om-t{font-size:40px !important}.om-s{font-size:15px !important;margin-top:10px !important}.om-arr{top:auto !important;bottom:16px !important;transform:none !important;width:38px !important;height:38px !important}.om-arr-l{left:16px !important}.om-arr-r{right:auto !important;left:62px !important}.om-adv{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important;margin-top:24px !important}.om-adv a{font-size:14px !important;padding:12px !important;gap:10px !important}.om-adv a>span:first-child{width:40px !important;height:40px !important}}
+@media (max-width: 900px){.om-toplinks{display:none !important}.om-hours{display:none !important}.om-search{order:3;flex:1 1 100% !important;max-width:none !important}.om-menu{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;gap:28px !important;scrollbar-width:none}.om-slide-txt{padding-left:24px !important}.om-hide-m{display:none !important}.om-chat-t{display:none}.om-hrow{padding:20px 0 18px !important}.om-tcart{display:none !important}.om-aside{order:2;flex:1 1 100% !important}.om-main{order:1}.om-promo{flex:1;width:auto !important}.om-promob{padding:0 16px !important}.om-mcart{display:flex !important}.om-cartbox{padding:18px !important}.om-top a[aria-label]{width:34px !important;height:34px !important}a[href^="tel"]{padding:10px 0}.om-hero-img{object-position:84% center !important}.om-slide-txt{justify-content:flex-end !important;padding-bottom:22px !important;padding-right:24px !important;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.72)) !important}.om-k{font-size:15px !important}.om-t{font-size:40px !important}.om-s{font-size:15px !important;margin-top:10px !important}.om-arr{top:16px !important;bottom:auto !important;transform:none !important;width:38px !important;height:38px !important}.om-arr-l{left:auto !important;right:62px !important}.om-arr-r{right:16px !important;left:auto !important}.om-adv{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important;margin-top:24px !important}.om-adv a{font-size:14px !important;padding:12px !important;gap:10px !important}.om-adv a>span:first-child{width:40px !important;height:40px !important}}
 </style>
 </helmet>
 <div style="font-family: 'TildaSans', sans-serif; letter-spacing: 0.4px; color: #000000; font-size: 14px; background: #FFFFFF">
@@ -64,7 +64,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 
 <main class="om-wrap">
 <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; margin-top: 10px">
-<aside style="flex: 0 0 270px; max-width: 100%; border: 0.8px solid rgba(0,0,0,.1); border-radius: 12px; padding: 24px 22px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<aside class="om-aside" style="flex: 0 0 270px; max-width: 100%; border: 0.8px solid rgba(0,0,0,.1); border-radius: 12px; padding: 24px 22px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="font-size: 22px; font-weight: 600">Как снять мерки</div>
 <div style="font-size: 14px; line-height: 1.55"><b>Рост</b> — без обуви, стоя у стены.</div>
 <div style="font-size: 14px; line-height: 1.55"><b>Обхват груди</b> — по самым выступающим точкам, лента горизонтально.</div>
@@ -73,7 +73,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 <div style="font-size: 14px; line-height: 1.55">Не хочется мерить? Напишите в Telegram рост и привычный размер — подберём сами.</div>
 <a class="om-btn" href="#" style="height: 44px; border-radius: 10px; background: #00B5B5; color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 15px">Написать в Telegram</a>
 </aside>
-<div style="flex: 999 1 560px; min-width: 0">
+<div class="om-main" style="flex: 999 1 560px; min-width: 0">
 <div style="font-size: 13px; margin-bottom: 18px"><a href="Main.dc.html" style="color: #00B5B5; text-decoration: underline">Главная</a> <span style="margin: 0 6px">&gt;</span> <span style="text-decoration: underline">Подбор размера онлайн</span></div>
 <h1 style="margin: 0 0 16px; font-size: 26px; font-weight: 600">Подбор размера онлайн</h1>
 <p style="margin: 0; font-size: 14px; line-height: 1.6; text-align: justify">Костюмы Rudy Claire свободного кроя, размеры XS–L. Введите рост и обхваты — подскажем размер и покажем костюмы, которые есть в нём. Если размер не подойдёт, обменяем в течение 7 дней.</p>
